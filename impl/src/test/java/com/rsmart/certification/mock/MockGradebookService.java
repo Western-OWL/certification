@@ -22,6 +22,7 @@ import org.sakaiproject.service.gradebook.shared.GradebookService;
 import org.sakaiproject.service.gradebook.shared.InvalidGradeException;
 import org.sakaiproject.service.gradebook.shared.SortType;
 import org.sakaiproject.service.gradebook.shared.StaleObjectModificationException;
+import org.sakaiproject.service.gradebook.shared.owl.anongrading.OwlAnonGradingID;
 
 /**
  * User: duffy
@@ -505,6 +506,78 @@ public class MockGradebookService implements GradebookService
 
     @Override
     public List getGradingEvents(List<Long> assignmentIds, Date since)
+    {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public List<OwlAnonGradingID> getAnonGradingIds()
+    {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public List<OwlAnonGradingID> getAnonGradingIdsForSection(final String sectionEid)
+    {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public List<OwlAnonGradingID> getAnonGradingIDsByGradingIDs(final Collection<Integer> gradingIDs)
+    {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public List<OwlAnonGradingID> getAnonGradingIDsBySectionEIDs(final Collection<String> sectionEIDs)
+    {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public Map<String, Map<String, String>> getAnonGradingIdMapBySectionEids(final Set<String> sectionEids)
+    {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public OwlAnonGradingID getAnonGradingId(final String sectionEid, final String userEid)
+    {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public Long createAnonGradingId(final OwlAnonGradingID gradingId)
+    {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public void updateAnonGradingId(final OwlAnonGradingID gradingId)
+    {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public int createAnonGradingIds(final Set<OwlAnonGradingID> gradingIds)
+    {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public int updateAnonGradingIds(final Set<OwlAnonGradingID> gradingIds)
+    {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public void deleteAnonGradingId(final OwlAnonGradingID gradingId)
+    {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public int deleteAnonGradingIds(final Set<OwlAnonGradingID> gradingIds)
     {
         throw new UnsupportedOperationException("Not supported yet.");
     }
