@@ -23,6 +23,8 @@ import org.sakaiproject.service.gradebook.shared.InvalidGradeException;
 import org.sakaiproject.service.gradebook.shared.SortType;
 import org.sakaiproject.service.gradebook.shared.StaleObjectModificationException;
 import org.sakaiproject.service.gradebook.shared.owl.anongrading.OwlAnonGradingID;
+import org.sakaiproject.service.gradebook.shared.owl.finalgrades.OwlGradeApproval;
+import org.sakaiproject.service.gradebook.shared.owl.finalgrades.OwlGradeSubmission;
 
 /**
  * User: duffy
@@ -578,6 +580,47 @@ public class MockGradebookService implements GradebookService
 
     @Override
     public int deleteAnonGradingIds(final Set<OwlAnonGradingID> gradingIds)
+    {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    public List<OwlGradeSubmission> getAllCourseGradeSubmissionsForSectionInSite(final String sectionEid, final String siteId) throws IllegalArgumentException
+    {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+       
+    public OwlGradeSubmission getMostRecentCourseGradeSubmissionForSectionInSite(final String sectionEid, final String siteId) throws IllegalArgumentException
+    {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    public boolean isSectionInSiteApproved(final String sectionEid, final String siteId) throws IllegalArgumentException
+    {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    public boolean areAllSectionsInSiteApproved(final Set<String> sectionEids, final String siteId) throws IllegalArgumentException
+    {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    public Long createSubmission(final OwlGradeSubmission sub) throws IllegalArgumentException
+    {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    public void updateSubmission(final OwlGradeSubmission sub) throws IllegalArgumentException
+    {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    public Long createApproval(final OwlGradeApproval approval) throws IllegalArgumentException
+    {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public boolean isOfficialRegistrarGradingSchemeInUse(final Long gradebookId)
     {
         throw new UnsupportedOperationException("Not supported yet.");
     }
