@@ -98,6 +98,11 @@ public class MockGradebookService implements GradebookService
         return assignments;
     }
 
+    public List getAssignmentsAnonAware(String gradebookUid, boolean includeAnon)
+    {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
     public Assignment getAssignment(String gradebookUid, String assignmentName) throws GradebookNotFoundException
     {
         return (Assignment)getAssignments(null).get(0);
@@ -394,6 +399,12 @@ public class MockGradebookService implements GradebookService
 
     @Override
     public List<Assignment> getViewableAssignmentsForCurrentUser(String gradebookUid, SortType sortBy)
+    {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public List<Assignment> getViewableAssignmentsForCurrentUserAnonAware(String gradebookUid, SortType sortBy, boolean includeAnon)
     {
         throw new UnsupportedOperationException("Not supported yet.");
     }
