@@ -1,3 +1,5 @@
+2017.09.09:
+	- [OWL-2935] variables to be substituted (right column on confirmation screen) are now displayed as proper descriptions from resource bundles
 2017.07.04:
 	- [OWL-2714] refactor certification student number support to use CandidateDetailProvider
 2017.05.01:
