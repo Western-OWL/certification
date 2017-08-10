@@ -1,4 +1,6 @@
-2017.09.09:
+2017.08.10:
+	- [OWL-2934] fixed a missing javascript variable that broke all js functionality on the report page
+2017.08.09:
 	- [OWL-2935] variables to be substituted (right column on confirmation screen) are now displayed as proper descriptions from resource bundles
 2017.07.04:
 	- [OWL-2714] refactor certification student number support to use CandidateDetailProvider
