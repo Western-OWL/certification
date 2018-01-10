@@ -635,4 +635,10 @@ public class MockGradebookService implements GradebookService
     {
         throw new UnsupportedOperationException("Not supported yet.");
     }
+
+	@Override
+	public boolean isValidNumericGrade(String grade)
+	{
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
 }
