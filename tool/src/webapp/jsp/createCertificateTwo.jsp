@@ -239,7 +239,7 @@
                     appendCriterionToDiv(data);
                 },
                 error: function (xhr, status, errorThrown) {
-                    var patt = new RegExp("ERROR_MESSAGE(.*?)/ERROR_MESSAGE");
+                    var patt = new RegExp("ERROR_MESSAGE(.*?)&#47;ERROR_MESSAGE");
 
                     var match = patt.exec(xhr.responseText);
 
