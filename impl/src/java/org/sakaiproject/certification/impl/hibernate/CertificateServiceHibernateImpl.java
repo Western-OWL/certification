@@ -488,7 +488,7 @@ public class CertificateServiceHibernateImpl extends HibernateDaoSupport impleme
         }
 
         docTemp.setName(fileName);
-        final String resourceId = "/" + cd.getSiteId() + DocumentTemplate.COLLECTION_ID + cd.getId() + "/" + fileName;
+        final String resourceId = DocumentTemplate.COLLECTION_ID + cd.getSiteId() + "/" + cd.getId() + "/" + fileName;
         ContentResourceEdit templateFile = null;
         try {
             templateFile = (ContentResourceEdit) doSecureCertificateService(() -> storeTemplateFile(cd.getSiteId(), cd.getId(), template, fileName, mimeType, resourceId));
