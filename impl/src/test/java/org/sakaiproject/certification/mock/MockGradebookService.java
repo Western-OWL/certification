@@ -28,13 +28,13 @@ import org.sakaiproject.service.gradebook.shared.StaleObjectModificationExceptio
 public class MockGradebookService implements GradebookService
 {
     @Override
-    public Optional<CategoryScoreData> calculateCategoryScore( Long gradebookId, String studentUuid, Long categoryId, boolean includeNonReleasedItems )
+    public Optional<CategoryScoreData> calculateCategoryScore( Object gradebook, String studentUuid, CategoryDefinition category, List<Assignment> categoryAssignments, Map<Long, String> gradeMap, boolean includeNonReleasedItems )
     {
         return Optional.empty();
     }
 
     @Override
-    public Optional<CategoryScoreData> calculateCategoryScore( Object gradebook, String studentUuid, CategoryDefinition category, List<Assignment> categoryAssignments, Map<Long, String> gradeMap, boolean includeNonReleasedItems )
+    public Optional<CategoryScoreData> calculateCategoryScore( Long gradebookId, String studentUuid, CategoryDefinition category, boolean includeNonReleasedItems )
     {
         return Optional.empty();
     }
