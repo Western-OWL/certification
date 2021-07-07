@@ -324,6 +324,11 @@ public class MockGradebookService implements GradebookService
         return null;
     }
 
+    public Map<String, Map<Long, GradeDefinition>> getGradesForStudentsForItems(String gradebookUid, List<String> studentIds, List<Assignment> assignments)
+    {
+        return null;
+    }
+
     public boolean isGradeValid(String gradebookUuid, String grade) throws GradebookNotFoundException
     {
         return false;
